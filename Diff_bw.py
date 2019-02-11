@@ -1,25 +1,21 @@
 s=input()
 r=input()
 g=[]
-if " " in s and " " in r:
+if (s.isalpha() or " " in s) and (r.isalpha() or " " in r):
     s=list(s.split(" "))
     r=list(r.split(" "))
-    if len(r)>len(s):
-        for i in r:
-            if i not in s:
-                g.append(i)
-    elif len(s)>len(r):
-        for i in s:
-            if i not in r:
-                g.append(i)
+    for i in s:
+        if s.count(i) > r.count(i) and i not in g:
+            g.append(i)
+    for i in r:
+        if r.count(i)>s.count(i) and i not in g:
+            g.append(i)
     print(*g)
 else:
-    if len(s)>len(r):
-        for i in s:
-            if i not in r:
-                g.append(i)
-    elif len(r)>len(s):
-        for i in r:
-            if i not in s:
-                g.append(i)
+    for i in s:
+        if s.count(i)>r.count(i) and i not in g:
+            g.append(i)
+    for i in r:
+        if r.count(i)>s.count(i) and i not in g:
+            g.append(i)
     print(*g)
