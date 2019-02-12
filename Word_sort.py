@@ -10,6 +10,6 @@ for i in g:
 	for j in i:
 			a.append(j)
 f=""
-for i in a:
-	f=f+i
+for i in range(0,len(a)-1):
+	f=f+a[i]
 print(f)
