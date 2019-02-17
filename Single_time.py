@@ -1,3 +1,4 @@
+#ammu
 r=int(input())
 n=input()
 d={}
