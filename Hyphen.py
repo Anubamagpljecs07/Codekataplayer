@@ -1,3 +1,4 @@
+#G
 s=input()
 r=s[::-1]
 for i in range(len(s)):
