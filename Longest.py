@@ -1,3 +1,4 @@
+#G
 s=input()
 s=list(s.split())
 l=[]
