@@ -1,3 +1,4 @@
+#G
 s,m=map(str,input().split())
 a=len(s)
 b=len(m)
